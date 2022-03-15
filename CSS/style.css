@@ -8,6 +8,7 @@ body{
 }
 
 nav{
+    position: fixed;
     width: 100%;
     min-height: 80px;
     background-color: black;
