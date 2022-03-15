@@ -17,8 +17,8 @@ nav{
     
 
 }
-.navbar{
-    position: fixed;
+.navbar.{
+    position: sticky;
 }
 .navbar-brand{
     margin: 1%;
