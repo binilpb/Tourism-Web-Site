@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+    min-height: 80px;
+    background-color: black;
+    opacity: 50%;
+    padding-right: 30px;
+    
+}
+.navbar-brand{
+    margin: 1%;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: yellowgreen;
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: yellow;
+    box-shadow: #ECF0F5;
+    border: 1px solid white;
+    
+}
+
+.navbar-light .navbar-nav .nav-link.disabled {
+    color: teal;
+    
+}
+
+
+.nav-item{
+   
+   width: 100px;
+   text-align: center;
+   /* max-width: 150px; */
+   /* display: inline-block */
+}
+
+.loginPage{
+    background-color: #1a2226;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    
+    
+}
+.login-image{
+    background-image: url("../Images/Alappuzha Cover - Copy.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    float: left;
+
+ 
+
+}
+
+.login-box {
+    
+    padding-top: 75px;
+    
+    background: #1A2226;
+    text-align: center;
+    margin: 0px;
+    margin-left: 30px;
+    float: right;
+}
+
+.login-icon {
+    height: 100px;
+    font-size: 80px;
+    line-height: 100px;
+    background: transparent;
+    margin-bottom: 30px;
+
+}
+
+
+
+.login-form {
+    margin-top: 25px;
+    text-align: left;
+}
+
+.loginPage input[type=text] {
+    background-color: #1A2226;
+    border: none;
+    border-bottom: 2px solid #0DB8DE;
+    border-top: 0px;
+    border-radius: 0px;
+    font-weight: bold;
+    outline: 0;
+    margin-bottom: 20px;
+    padding-left: 0px;
+    color: #ECF0F5;
+}
+
+.loginPage input[type=password] {
+    background-color: #1A2226;
+    border: none;
+    border-bottom: 2px solid #0DB8DE;
+    border-top: 0px;
+    border-radius: 0px;
+    font-weight: bold;
+    outline: 0;
+    padding-left: 0px;
+    margin-bottom: 20px;
+    color: #ECF0F5;
+}
+
+.loginPage .form-group {
+    margin-bottom: 40px;
+    outline: 0px;
+}
+
+.loginPage .form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 2px solid #0DB8DE;
+    outline: 0;
+    background-color: #1A2226;
+    color: #ECF0F5;
+}
+
+.loginPage input:focus {
+    outline: none;
+    box-shadow: 0 0 0;
+}
+
+.loginPage label {
+    margin-bottom: 0px;
+}
+
+.loginPage .form-control-label {
+    font-size: 10px;
+    color: #6C6C6C;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.loginPage .btn-outline-primary {
+    border-color: #0DB8DE;
+    color: #0DB8DE;
+    border-radius: 0px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.loginPage .btn-outline-primary:hover {
+    background-color: #0DB8DE;
+    right: 0px;
+}
+
+.loginPage .login-btm {
+    float: left;
+}
+
+.loginPage .login-button {
+    padding-right: 0px;
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+.loginPage .login-text {
+    text-align: left;
+    padding-left: 0px;
+    color: #A2A4A4;
+}
+
+.loginPage .loginbttm {
+    padding: 0px;
+}
+.loginPage .signup-Message p{
+    color: white;
+    text-align: left;
+    margin-bottom: 100px;
+    
+    
+    
+    
+}
+.SignUp{
+    background-color: white;
+}
+
+.SignUpLeft h1{
+    color: green;
+    margin: 30px;
+    
+}
+.form-group-left
+{
+    float: left;
+    margin-left: 5%;
+    margin-bottom: 4%;
+}
+.form-group-full
+{
+    float: left;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-bottom: 4%;
+
+
+}
+.form-group-right
+{
+    
+    float: right;
+    margin-right: 3%;
+    margin-bottom: 4%;
+}
+.form-group-address
+{
+   height: 100px;
+    
+}
+.form-check-input{
+    width: 23px;
+    height: 23px;
+    margin-top: 36px;
+   
+}
+.form-check-label{
+    
+    height: 23px;
+    width: 175px;
+    margin-left: 10px;
+    margin-top: 30px;
+    text-align: left;
+    padding-top: 6px;
+}
+.SignUp-box{
+
+    padding-top: 50px;
+}
+.signUpSubmit .btn-primary{
+    width: 150px;
+    color:white;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+    margin-left: -70px;
+}
+
+.WelcomeCarousel img{
+    max-width: 100%;
+    height: 35rem;
+    vertical-align: middle;
+    border: 0;
+
+    
+}
+.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+.about{
+    text-align: center;
+}
+.about h1{
+    margin-top:50px ;
+    color: green;
+}
+
+.about p{
+    text-align: justify;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height: 1.8;
+    margin-top: 30px;
+}
+.district-grid{
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.button-Grid{
+    
+    float: left;
+}
+.district-grid .row{
+    margin-top: 30px;
+
+}
+
+.district-grid .btn-primary{
+    height: 50px;
+    font-weight: bold;
+    width: 200px;
+}
+
+
+.Kerala-Map{
+    /* background-image: url("../Images/Districts_of_Kerala.png");
+    background-size: cover; */
+    
+    float: right;
+    
+
+}
+
+.distric-car .carousel-control-prev,
+.carousel-control-next{
+
+    margin-top: 75;
+}
