@@ -11,15 +11,16 @@ nav{
     
     width: 100%;
     min-height: 80px;
-    background-color: black;
-    opacity: 50%;
+    background-color: #777;
+ 
     padding-right: 30px;
     
 
 }
-.navbar.{
-    position: sticky;
-}
+/* .navbar{
+    position: fixed;
+    
+} */
 .navbar-brand{
     margin: 1%;
 }
@@ -37,7 +38,7 @@ nav{
 }
 
 .navbar-light .navbar-nav .nav-link.disabled {
-    color: teal;
+    color: rgb(206, 206, 206);
     
 }
 
