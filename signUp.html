@@ -5,7 +5,9 @@
     <title>Sign up Page</title>
     
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
     <link rel="stylesheet" href="./CSS/style.css">
+
     <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
 </head>
 
@@ -59,67 +61,83 @@
             <div class="row">
                 
                 <div class="col-md-1"> </div>  
-                <div class="col-sm-12 col-md-10 SignUp-box">             
+                <div class="col-sm-12 col-md-10 SignUp-box signUpBoxBorder">             
     
     
                     <form>
+                        <h3 style="text-align: left; margin-left: 5%;margin-bottom: 20px;">Sign up</h3>
+                        <div class="row">
+                            <div class="form-group form-group-left col-lg-5">
+                                <label for="FirstNameSignUp">First Name</label>
+                                <input type="text" class="form-control" id="FirstNameSignUp">
+                                
+                            </div>
+                            
+
+                            <div class="form-group form-group-right col-lg-5">
+                                <label for="LastNameSignUp">Last Name</label>
+                                <input type="text" class="form-control" id="LastNameSignUp">
+                                
+                            </div>
                         
-                        <div class="form-group form-group-left col-lg-5">
-                            <label for="FirstNameSignUp">First Name</label>
-                            <input type="text" class="form-control" id="FirstNameSignUp">
-                            
-                        </div>
-                        
-
-                        <div class="form-group form-group-right col-lg-5">
-                            <label for="LastNameSignUp">Last Name</label>
-                            <input type="text" class="form-control" id="LastNameSignUp">
-                            
-                        </div>
-                        <br>
-
-                        <div class="form-group form-group-full col-lg-11">
-                            <label for="AddressSignUp">Address</label>
-                            <textarea class="form-control" rows="3" id="AddressSignUp"></textarea>
-                            
-                        </div>
-                        <br>
-
-                        <div class="form-group form-group-full col-lg-11">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                        </div>
-
-                            
-
-
-                        <div class="form-group form-group-left col-lg-5">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-
-                        <div class="form-group form-group-right col-lg-5">
-                            <label for="ConfirmInputPassword1">Confirm Password</label>
-                            <input type="password" class="form-control" id="ConfirmInputPassword1">
                         </div>
                         
-                        <div class="form-group form-group-left col-lg-5">
-                            <label for="NumberSignUp">Mobile Number</label>
-                            <input type="number" class="form-control" id="NumberSignUp">
+                        
+                        <div class="row">
+                            <div class="form-group form-group-full col-lg-10">
+                                <label for="AddressSignUp">Address</label>
+                                <textarea class="form-control" rows="3" id="AddressSignUp"></textarea>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group form-group-left col-lg-5">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+
                             
+                            <div class="form-group form-check form-group-right col-lg-5">
+                                
+                                <label class="form-check-label " for="exampleCheck1">Receive Notifications</label>
+                                <input type="checkbox" class="form-check-input col-lg-10" id="exampleCheck1">                                   
+                            </div> 
                         </div>
 
-                        <div class="form-group form-check form-group-right col-lg-5">
                             
-                            <label class="form-check-label " for="exampleCheck1">Receive Notifications</label>
-                            <input type="checkbox" class="form-check-input col-lg-10" id="exampleCheck1">
+
+                        <div class="row">
+                            <div class="form-group form-group-left col-lg-5">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+
+                            <div class="form-group form-group-right col-lg-5">
+                                <label for="ConfirmInputPassword1">Confirm Password</label>
+                                <input type="password" class="form-control" id="ConfirmInputPassword1">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group form-group-left col-lg-5">
+                                <label for="NumberSignUp">Mobile Number</label>
+                                <input type="number" class="form-control" id="NumberSignUp">
+                                
+                            </div>
+
+                            <div class="form-group form-check form-group-right col-lg-5">
+                                
+                                <label class="form-check-label " for="exampleCheck1">Receive Messages</label>
+                                <input type="checkbox" class="form-check-input col-lg-10" id="exampleCheck1">                                   
+                            </div>      
+                        </div>   
+                        
+                        <div class="row">
+                            <p class="col-lg-5"></p>
                             
+                                <button type="submit" class="btn btn-primary col-lg-2">Submit</button>
                             
-                        </div>      
-                        <br>               
-                        <div class="signUpSubmit form-group-left">
-                            <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </form>
                         
