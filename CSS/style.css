@@ -284,6 +284,11 @@ nav{
     margin-top:50px ;
     color: green;
 }
+.about h2{
+    margin-top:20px ;
+    color: green;
+    text-align: left;
+}
 
 .about p{
     text-align: justify;
