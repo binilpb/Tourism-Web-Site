@@ -345,3 +345,21 @@ nav{
 
     margin-top: 75;
 }
+.footer{
+    background-color: #777;
+    height: 100px;
+    padding-top: 25px;
+
+
+}
+.footer a{
+
+    color:white;
+    text-decoration:none;
+}
+
+.footer p{
+
+    color: rgb(206, 206, 206);
+    
+}
