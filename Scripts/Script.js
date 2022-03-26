@@ -15,6 +15,7 @@ function phonenumber()
         {
             phoneNumHelp.innerText="Invalid Mobile Number";
             phoneNumHelp.visibility=true;
+            phoneNum.focus();
             return false;
         }
 }
@@ -35,6 +36,7 @@ if(Email.value.match(mailformat))
 
 EmailHelp.innerText=""
 EmailHelp.style.visibility=false;
+
 
 return true;
 }
@@ -82,6 +84,7 @@ else
 { 
     passhelp.innerText="Invalid Password"
     passhelp.title="Password Should have Minimum 8 characters  at least one uppercase and one lower case letter  and must contain at least one number"
+    pass.focus();
     return false;
 
 }
@@ -99,26 +102,62 @@ function confirmPass(){
     else{
         confirmHelp.innerText="Password doesn't match";
         confirmHelp.style.visibility=true;
+        confirmPassword.focus();
         return false}
 }
+
 
 
 function formValidation()
 {
 
    
-    if(phonenumber()){
-            if(ValidateEmail())
+    if(ValidateEmail()){
+            if(CheckPassword())
             {
-                if (CheckPassword())                
+                if (confirmPass())                
                 { 
-                    if(confirmPass()){
+                    if(phonenumber()){
                     return true; 
                     }              
                 }
-                else{return false}
-            } else{return false}
-    } else{return false}
+                // else{return false}
+            } 
+            // else{return false}
+    } 
+    // else{return false}
 
     return false;
+}
+
+function LogInValidation(){
+  
+    var email=document.getElementById("emailLogin");
+    var pass=document.getElementById("passwordLogin");
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var passregExp=   /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/;
+    var help=document.getElementById("HelpForEmailPassLogin")
+    if(email.value.match(mailformat) && pass.value.match(passregExp)){
+        help.innerText="";
+        help.style.visibility=false;
+   
+        return true;  
+          
+    }
+    else{
+        if(!(email.value.match(mailformat)) && !(pass.value.match(passregExp))){
+            help.innerText="Email and Password is not in accepted format";
+            help.style.visibility=true;            
+        }
+        else if(!(email.value.match(mailformat))){
+            help.innerText="Email is not in accepted format";
+            help.style.visibility=true;
+
+        }
+        else{
+        help.innerText="Password is not in accepted format";
+        help.style.visibility=true;
+        }
+        return false; 
+    }
 }
