@@ -267,11 +267,17 @@ nav{
     color: black;
 }
 .SignUp-box .btn-primary{
-    width: 150px;
+    
     color:white;
 
     font-weight: bold;
     display: block;
+    float: initial;
+    height: 40px;
+    margin: 13px;
+    padding-bottom: 6px;
+    width: 81%;
+    margin-left:6%;
     /* margin-top: -15px; */
     /* margin-left: -70px; */
     
