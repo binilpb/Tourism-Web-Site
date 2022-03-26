@@ -271,13 +271,15 @@ nav{
     color:white;
 
     font-weight: bold;
-    display: block;
+    
     float: initial;
     height: 40px;
     margin: 13px;
     padding-bottom: 6px;
     width: 81%;
-    margin-left:6%;
+    /* margin-left:6%; */
+    margin-top: 0px;
+    
   
     /* margin-top: -15px; */
     /* margin-left: -70px; */
@@ -394,4 +396,7 @@ nav{
     margin-bottom: 12px;
 }
 
-
+#HelpForEmailPassLogin{
+    margin-top: -35px;
+    text-align: center;
+}
