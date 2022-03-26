@@ -64,7 +64,7 @@
                 <div class="col-sm-12 col-md-10 SignUp-box signUpBoxBorder">             
     
     
-                    <form>
+                    <form id="SignUpForm" action="./index.html"  onsubmit="return formValidation()">
                         <h3 style="text-align: left; margin-left: 5%;margin-bottom: 20px;">Sign up</h3>
                         <div class="row">
                             <div class="form-group form-group-left col-lg-5">
@@ -93,15 +93,16 @@
                         <div class="row">
                             <div class="form-group form-group-left col-lg-5">
                                 <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp">
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                <input type="email" onchange="ValidateEmail()" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <small id="HelpForexampleInputEmail1"  class="form-text text-muted">Invallid Email.</small>
                             </div>
 
                             
                             <div class="form-group form-check form-group-right col-lg-5">
                                 
                                 <label class="form-check-label " for="exampleCheck1">Receive Notifications</label>
-                                <input type="checkbox" class="form-check-input col-lg-10" id="exampleCheck1">                                   
+                                <input type="checkbox" class="form-check-input col-lg-10" id="exampleCheck1">   
+                                                               
                             </div> 
                         </div>
 
@@ -110,33 +111,42 @@
                         <div class="row">
                             <div class="form-group form-group-left col-lg-5">
                                 <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <input type="password" onchange="CheckPassword()" maxlength="20" class="form-control" id="exampleInputPassword1">                             
+                                <small id="HelpForexampleInputPassword1" class="form-text text-muted"  data-toggle="tooltip" 
+                                title="">                            
+                                </small>
+                                
                             </div>
 
                             <div class="form-group form-group-right col-lg-5">
                                 <label for="ConfirmInputPassword1">Confirm Password</label>
-                                <input type="password" class="form-control" id="ConfirmInputPassword1">
+                                <input type="password" maxlength="20" class="form-control" id="ConfirmInputPassword1">
+                                <small id="HelpForConfirmInputPassword1" style="font-size: px;" class="form-text text-muted"></small>
+                               
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="form-group form-group-left col-lg-5">
                                 <label for="NumberSignUp">Mobile Number</label>
-                                <input type="number" class="form-control" id="NumberSignUp">
+                                <input type="text" class="form-control" onchange="phonenumber()" id="NumberSignUp">
+                                <small id="HelpForNumberSignUp" class="form-text text-muted">Invallid Email.</small>
                                 
                             </div>
 
                             <div class="form-group form-check form-group-right col-lg-5">
-                                
+                                <div class="row">
                                 <label class="form-check-label " for="exampleCheck1">Receive Messages</label>
-                                <input type="checkbox" class="form-check-input col-lg-10" id="exampleCheck1">                                   
+                                <input type="checkbox" class="form-check-input col-lg-1" id="exampleCheck1">   
+                                <!-- <button type="submit" id="SignUpSubmitButton" class="btn signupButton btn-primary">Sign Up</button> -->
+                            </div>                                
                             </div>      
                         </div>   
                         
                         <div class="row">
-                            <p class="col-lg-5"></p>
-                            
-                                <button type="submit" class="btn btn-primary col-lg-2">Submit</button>
+                                
+                                <!-- <p class="col-lg-8"></p> -->
+                                <button type="submit" id="SignUpSubmitButton" class="btn signupButton btn-primary">Sign Up</button>
                             
                         </div>
                     </form>
@@ -149,6 +159,6 @@
 
 
 
-
+    <script src="./Scripts/Script.js"></script>
 </body>
 </html>
