@@ -371,7 +371,7 @@ nav{
 
     margin-top: 75;
 }
-.footer{
+.footerContainer{
     background-color: #777;
     height: 270px;
     padding-top: 25px;
@@ -379,13 +379,13 @@ nav{
     text-align: center;
 
 }
-.footer a{
+.footerContainer a{
 
     color:white;
     text-decoration:none;
 }
 
-.footer p{
+.footerContainer p{
 
     color: rgb(206, 206, 206);
     
@@ -400,4 +400,7 @@ nav{
 #HelpForEmailPassLogin{
     margin-top: -35px;
     text-align: center;
+}
+.loginpageContainer{
+    width: 100%;
 }
