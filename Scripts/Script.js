@@ -66,13 +66,16 @@ if(pass.value.match(regExp) && pass.value!="")
 
     passhelp.innerText="Weak"
     passhelp.title="Make Password more stronger by adding Special Characters"
+    passhelp.style.color="red"
     
     if(pass.value.match(regExpMedium)) {
         passhelp.innerText="Medium"
         passhelp.title="Make Password more stronger by adding atleast 12 characters"
+        passhelp.style.color="orange"
         if(pass.value.match(regExpStrong)) {
             passhelp.innerText="Strong"
-            passhelp.title=""           
+            passhelp.title=""  
+            passhelp.style.color="green"         
         }
 
     }
