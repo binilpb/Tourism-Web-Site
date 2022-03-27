@@ -58,22 +58,24 @@ var passhelp=document.getElementById("HelpForexampleInputPassword1");
 var regExp=   /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/;
 var regExpMedium=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
 var regExpStrong=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{12,15}$/;
+// var faminus='<i class="fa fa-minus" style="font-size:14px;width:100px;"></i>';
 
 
 if(pass.value.match(regExp) && pass.value!="") 
 {   
 
 
-    passhelp.innerText="Weak"
+    passhelp.innerHTML="Weak Password"
     passhelp.title="Make Password more stronger by adding Special Characters"
     passhelp.style.color="red"
+
     
     if(pass.value.match(regExpMedium)) {
-        passhelp.innerText="Medium"
+        passhelp.innerHTML="Medium"
         passhelp.title="Make Password more stronger by adding atleast 12 characters"
         passhelp.style.color="orange"
         if(pass.value.match(regExpStrong)) {
-            passhelp.innerText="Strong"
+            passhelp.innerHTML="Strong Password"
             passhelp.title=""  
             passhelp.style.color="green"         
         }
